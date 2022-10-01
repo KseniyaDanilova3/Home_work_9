@@ -3,14 +3,14 @@
 // N = 8 -> "8, 7, 6, 5, 4, 3, 2, 1"
 
 Console.Write("Введите число: ");
-int N = int.Parse(Console.ReadLine()!);
+int n = int.Parse(Console.ReadLine()!);
 
-Console.WriteLine(NaturalNumbers(N));
+Console.WriteLine(NaturalNumbers(n));
 
-string NaturalNumbers (int N)
+string NaturalNumbers (int n)
 {
-      if (N == 1) 
+      if (n == 1) 
             return "1";
       
-      return N + " , " + NaturalNumbers(N - 1);
+      return n + " , " + NaturalNumbers(n - 1);
 }
